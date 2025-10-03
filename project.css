@@ -1,0 +1,262 @@
+.bluebg{
+    background-color:#003580;
+    height:45vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:30px;
+ } 
+                               /* to align the grandchildren make the child a flex container */
+ .navleft{                      
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    padding-left: 150px;
+
+}
+.navright{
+    color: white;
+    width: 600px;
+    height:100px;
+    padding-right: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+.navright *{
+      padding: 10px;
+
+}
+.row2{
+    position: absolute;
+    top:90px;
+    left: 150px;
+    gap:15px;
+
+}
+.row2 button{
+    color: white;
+    border-radius: 50px;
+    height: 45px;
+    background: none;
+    border: none;
+}
+.flag:hover {
+    background-color:lightblue;
+    opacity: 75%;
+    border-radius: 5px;    
+    ;
+}
+.navright i:hover {
+    background-color: #1f75ff;
+    opacity: 75%;
+    border-radius: 5px;    
+}
+.navright span:hover{
+    background-color: #1f75ff;
+    opacity: 75%;
+    border-radius: 5px;    
+}
+.navright button{
+    color: #1f75ff;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+}
+.row2 button:hover{
+    border: none;
+    background-color: #1f75ff;opacity: 75%;
+  
+}
+#stay{
+    outline:solid snow ;
+}
+.flag{border-radius: 50px;}
+.content{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    font-size: x-large;
+    color: white;
+
+}
+.nav3{
+    height: 70px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    left: 150px;
+    top:340px;
+    background-color:#ffb700;
+    border-radius: 5px;
+}
+.nav3 .in1{
+    height: 60px;
+    width: 300px;
+    border: none;
+    border-radius: 0px 5px 5px 0px ;
+    font-size: 15px;
+    font-weight:bold;
+}
+.nav3 .in3,.in2 {
+    height: 60px;
+    width: 250px;
+    border: none;
+    border-radius:0px 5px 5px 0px;
+    font-size: 15px;
+    font-weight:bold;
+}
+.nav3 button{
+    height: 60px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    margin:5px;
+    background-color: #1f75ff;
+    color: white;
+}
+.nav3 i{
+    padding: 20px 0px 20px 20px;
+    margin: 4px 0px 4px 6px;
+    background-color: white;
+    height: 22px;
+    width: 60px;
+    border-radius: 5px 0px 0px 5px;
+}
+.check{
+    position: absolute;
+    left: 150px;
+    top:420px;
+}
+.why{
+     position: absolute;
+    left: 150px;
+    top:450px;
+}
+.nav4{
+    display: flex;
+    justify-content:space-between;
+    align-items:center ;
+    width: 80%;
+    height: 250px;
+    position: absolute;
+    left: 150px;
+    top: 530px;
+}
+.nav4 img{
+    width: 80px;
+    height: 70px;
+}
+.nav4 .nav41{
+    background-color: lightgray;
+    width: 270px;
+    height:250px;
+    border-radius: 5px;   
+}
+.nav41 h3,.nav41 p,.nav41 img{
+         padding:10px;
+}
+.why1{
+     position: absolute;
+    left: 150px;
+    top:800px;
+}
+.why2{
+    position: absolute;
+    left: 150px;
+    top:850px;
+}
+.footer{
+    width: 550px;
+    height:150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left :150px;
+    top:900px ;
+    border: solid lightgray;
+    border-radius: 10px;
+}
+.footer h3,.footer p,.footer img{
+    padding: 5px 10px 5px 10px;
+   
+}
+.child2 img{
+     border-radius:10px;
+}
+.footer button{
+    width:100px;
+    height: 35px;
+    background-color: #1f75ff;
+    border: none;
+    border-radius: 5px;
+    margin:0px 0px 20px 10px;
+}
+
+.footer2 {
+    color:white;
+    position: absolute;
+    left :750px;
+    top:900px ;
+    width:550px;
+    height:175px;
+    background-image: url(footer2.jpeg);
+    border-radius: 10px;
+}
+.footer2 *{
+    margin-left:15px;
+}
+.footer2 button{
+   width:100px;
+    height: 35px;
+    background-color: #1f75ff;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+#img{
+    border-radius:10px;
+}
+@media (max-width: 768px) {
+  .navright {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .row2 {
+    justify-content: center;
+  }
+
+  .nav3 {
+    flex-direction: column;
+  }
+
+  .nav3 input, .nav3 button {
+    width: 100%;
+  }
+
+  .footer, .footer2 {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 1.5rem;
+  }
+
+  .navleft {
+    font-size: 18px;
+  }
+
+  .row2 button {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+}
